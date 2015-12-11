@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="header clearfix">
+            <div class="container">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <h3>Temelj Gradnja</h3>
+                </nav>
+            </div>
+        </header>
+
+        <section class="section-main">
+            <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="main-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="main-carousel" data-slide-to="1"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item slide-01 active">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <h2 class="animated fadeInDown">Uredite interjere i eksterijere</h2>
+                                <p class="animated fadeInDown">Vaše interijere i eksterijere uredite vrlo kvalitetno i u kratkom roku</p>
+                                <a href="#" class="button-outline">Pročitaj više</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item slide-02">
+                        <div class="carousel-caption">
+                        Second slide
+                        </div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Prev</span>
+                </a>
+            </div>
+        </section>
+
+        <script>
+            $('.carousel').carousel({
+                interval: 10000
+            });
+        </script>
+    </body>
+</html>
